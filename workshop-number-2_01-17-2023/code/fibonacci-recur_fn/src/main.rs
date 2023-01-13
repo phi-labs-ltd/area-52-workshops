@@ -14,7 +14,7 @@ fn main() {
 
     while i < length {
         i += 1;
-        let result = fib.call(i);
+        let result: i32 = fib.call(i);
         println!("{:?}: {:?}", i, result);
     }
 }
