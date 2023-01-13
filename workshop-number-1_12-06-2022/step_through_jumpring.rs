@@ -19,7 +19,9 @@ pub fn step_through_jumpring(
     }
 
     let required_payment = Coin {
-        denom: "PORT".to_string(),
+        denom: "uport".to_string(), // "uport" is the fractional representation of the "PORT" token
+                                    // Of up to 6 decimal places/ We use lowercase and the "u" prefix 
+                                    // to denote "micro PORT", where 1 PORT is equal to 1000000 uport
         amount: Uint128::from(1u128),
     };
     check_sent_required_payment(&info.funds, Some(required_payment))?;
@@ -42,14 +44,14 @@ mod tests {
     #[test]
     fn testing_payment_checker() {
         let required_payment = Coin {
-            denom: "PORT".to_string(),
+            denom: "uport".to_string(),
             amount: Uint128::from(10u128),
         };
 
         // Sending payment lower than required should fail
         let sent_payment_too_low = vec![
             Coin {
-                denom: "PORT".to_string(),
+                denom: "uport".to_string(),
                 amount: Uint128::from(1u128),
             }
         ];
@@ -71,7 +73,7 @@ mod tests {
         // Sending exactly the required payment should succeed
         let sent_exact_payment = vec![
             Coin {
-                denom: "PORT".to_string(),
+                denom: "uport".to_string(),
                 amount: Uint128::from(10u128),
             }
         ];
@@ -82,7 +84,7 @@ mod tests {
         // Sending more funds than required payment should succeed
         let sent_higher_payment_than_required = vec![
             Coin {
-                denom: "PORT".to_string(),
+                denom: "uport".to_string(),
                 amount: Uint128::from(15u128),
             }
         ];
