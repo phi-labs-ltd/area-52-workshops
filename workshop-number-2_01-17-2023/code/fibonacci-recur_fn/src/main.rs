@@ -2,7 +2,7 @@ use recur_fn::{recur_fn, RecurFn};
 
 fn main() {
     let length: i32 = 45;
-    let mut i: i32 = 1;
+    let mut i: i32 = 0;
 
     let fib = recur_fn(|fib, n: i32| {
         if n <= 1 {
@@ -13,8 +13,8 @@ fn main() {
     });
 
     while i < length {
-        let result = fib.call(i);
         i += 1;
+        let result = fib.call(i);
         println!("{:?}: {:?}", i, result);
     }
 }
