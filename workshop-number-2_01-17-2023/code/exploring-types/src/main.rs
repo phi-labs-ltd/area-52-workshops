@@ -6,9 +6,9 @@ fn main() {
     println!("String: {}", a_string);
 
     // Comparing numeric types
-    let i8 = 1; // This is an integer of unknown type, the type is going to be 
+    let i8 = 1; // This is an integer of unknown type! The type is going to be 
                 // whatever fits best into memory (in our case  it will be i8,
-                // since 1 is a small number
+                // since 1 is a small number  to fit into memory
     let unsigned_32_bit_integer: u32 = 1;
     let signed_32_bit_integer: i32 = 1;
     println!("i8: {}", i8);
