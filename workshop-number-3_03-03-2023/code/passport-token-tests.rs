@@ -1,4 +1,5 @@
 // Source: https://github.com/phi-labs-ltd/area-52-courses/blob/main/02_Do_Cyborgs_Dream_of_NFTs/nft/passport-token/src/lib.rs
+// @see: https://docs.rs/cosmwasm-std/latest/cosmwasm_std/testing/index.html
 #![cfg(test)]
 mod tests {
     use crate::{Cw721MetadataContract, ExecuteMsg, Metadata};
