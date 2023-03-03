@@ -1,6 +1,7 @@
 // Source: https://github.com/phi-labs-ltd/area-52-courses/blob/main/02_Do_Cyborgs_Dream_of_NFTs/portal/src/integration_tests.rs
 // @see: https://doc.rust-lang.org/rust-by-example/std/box.htm
 // @see: https://docs.rs/cosmwasm-std/latest/cosmwasm_std/testing/index.html
+// @see: https://docs.rs/cw-multi-test/latest/cw_multi_test/
 #![cfg(test)]
 use serde::{de::DeserializeOwned, Serialize};
 use cosmwasm_std::{
