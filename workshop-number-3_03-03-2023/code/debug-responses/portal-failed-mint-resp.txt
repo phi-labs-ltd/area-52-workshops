@@ -1,0 +1,28 @@
+Err(error executing WasmMsg:
+    sender: owner
+    Execute { 
+        contract_addr: "contract0", 
+        msg: Binary(7b224d696e7450617373706f7274223a7b226d7367223a7b226e616d65223a224661696c65642050617373706f7274222c226465736372697074696f6e223a22496e76616c6964222c22696d616765223a22496e76616c6964222c22646e61223a22496e76616c6964222c2273706563696573223a22496e76616c6964222c2273617069656e63655f6c6576656c223a224c6f77222c226964656e74697479223a2275736572227d7d7d), 
+        funds: [] 
+    }
+    Caused by:
+    Carrying two passports is a crime
+)
+
+
+***
+
+Hex to utf-8 conversion result (of `msg` attribute):
+{
+    "MintPassport": {
+        "msg": {
+            "name": "Failed Passport",
+            "description": "Invalid",
+            "image": "Invalid",
+            "dna": "Invalid",
+            "species": "Invalid",
+            "sapience_level": "Low",
+            "identity": "user"
+        }
+    }
+}

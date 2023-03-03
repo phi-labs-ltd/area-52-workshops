@@ -1,0 +1,14 @@
+NftInfoResponse { 
+    token_uri: None, 
+    extension: Some(Metadata { 
+        name: Some("Traveler Name"), 
+        description: Some("Ever since you became a cyborg, you've been feeling pretty weird..."), 
+        image: Some("ipfs://QmZdPdZzZum2jQ7jg1ekfeE3LSz1avAaa42G6mfimw9TEn"), 
+        dna: Some("Example DNA String"), 
+        species: Some("Cyborg"), 
+        sapience_level: Some(High), 
+        issuer: Some(Addr("contract0")), 
+        origin: Some("earth"), 
+        identity: Some(Addr("user")) 
+    }) 
+}

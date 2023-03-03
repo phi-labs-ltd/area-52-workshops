@@ -1,0 +1,43 @@
+Ok(AppResponse 
+{ 
+    events: [Event 
+        { 
+            ty: "execute", 
+            attributes: [Attribute { 
+                key: "_contract_addr", 
+                value: "contract0" 
+            }]
+        }, 
+        Event { 
+            ty: "execute", 
+            attributes: [Attribute { 
+                key: "_contract_addr", 
+                value: "contract1" 
+            }] 
+        }, 
+        Event { 
+            ty: "wasm", 
+            attributes: [Attribute { 
+                key: "_contract_addr", 
+                value: "contract1" 
+            }, Attribute 
+            { 
+                key: "action", 
+                value: "mint" 
+            }, 
+            Attribute { 
+                key: "minter", 
+                value: "contract0" 
+            }, 
+            Attribute { 
+                key: "owner", 
+                value: "user" 
+            }, 
+            Attribute { 
+                key: "token_id", 
+                value: "user" 
+            }] 
+        }
+    ], 
+    data: None 
+})
